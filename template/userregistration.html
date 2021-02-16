@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="col-sm-offset-3">
+	<div class="container">
+		<form method="POST" enctype="multipart/form-data">{%csrf_token%}
+		{{form|crispy}}
+		{{profileform|crispy}}
+		<input type="submit" name="" class="btn btn-outline-success">
+		</form>
+	</div>
+</div>
+{% endblock %}

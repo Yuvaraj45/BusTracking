@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<DIV align="center">&nbsp;</DIV>
+			<DIV align="center">&nbsp;</DIV>
+			<DIV align="center">
+				<span  style="color:#0000C0;font-size:X-Large;"><B>BUS TRACKER</B></span></DIV>
+			<DIV align="center">
+				<span id="Label1" style="color:#0000C0;font-size:X-Large;"><i>Saveetha Institute of Medical & Technical Sciences</i></span></DIV>
+			<DIV align="center">
+				<TABLE id="Table1" cellSpacing="0" cellPadding="1" width="300" align="center" border="0">
+					<form method="POST">{% csrf_token %}
+					<TR>
+						<TD colSpan="2">
+							<P align="center">&nbsp;</P>
+							<P align="center">
+								<span id="m_message" style="color:Red;font-weight:bold;"></span></P>
+						</TD>
+					</TR>
+					<TR>
+						<TD><STRONG style="COLOR: #000099">Login&nbsp;ID:</STRONG></TD>
+						<TD>
+							<input name="loginid" type="text" id="m_loginid" tabindex="1" style="width:144px;" /></TD>
+					</TR>
+					<TR>
+						<TD><STRONG style="COLOR: #000099">Password:</STRONG></TD>
+						<TD>
+							<input name="password" type="password" id="m_password" tabindex="2" style="width:144px;" /></TD>
+					</TR>
+					<TR>
+						<TD colSpan="2">
+							<P align="center">
+								<br>
+							<input type="submit" value="Login" class="btn btn-outline-success"></P>
+						</TD>
+					</TR>
+					</form>
+				</TABLE>
+				<div class="row">
+				<div class="col-sm-12">
+				<h3>Vision</h3>
+				<div>
+				</div>
+				<div class="row">
+				<div class="col-sm-3">
+				</div>
+				<div class="col-sm-6">
+				<h5>To be, and to be recognized for setting the standards of excellence in professional education and high quality scientific research.</h5>
+				</div>
+				<div class="col-sm-3">
+				</div>
+				<div>
+				<br/>
+				<div class="row">
+				<div class="col-sm-12">
+				<h3>Mission</h3>
+				</div>
+				</div>
+				<div class="row">
+				<div class="col-sm-3">
+				</div>
+				<div class="col-sm-6">
+				<h5>To promote academic excellence, widen intellectual horizons, inculcate self-discipline and high ideals for the total personality development of the individual. To convert a novice into a competent professional with excellent theoretical knowledge, unsurpassed practical/clinical skills and to motivate the interest in the research activities, further education and social services.</h5>
+				</div>
+				<div class="col-sm-3">
+				</div>
+				</div>
+			</DIV>
+
+{% endblock %}

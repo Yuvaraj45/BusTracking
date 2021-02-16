@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+{%for i in obj%}
+    <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-sm-10">
+            <div class="img-thumbnail">
+                    <h2><a href="{% url 'blog:busdetail' i.slug %}" class="title-tag">{{i.title}}</a><i style="font-size: 15px;">&nbsp; &nbsp; Seats Occupied [10/60]</i><small style="float: right;"><a href="{% url 'blog:busdetail' i.slug %}" class="btn btn-outline-success btn-sm " role="button" aria-pressed="true">Track</a></small></h2>
+                        <div class="responsive" >  
+                            <blockquote class="blockquote">
+  <p class="mb-4" style="color: #B767C8;"><u><i>Route</i></u></p>
+  <footer class="blockquote-footer" >{{i.description}}</footer>
+</blockquote>
+                        </div>
+                </div>
+            </div>
+        </div>
+        </div>
+{%endfor%}
+{% endblock %}
